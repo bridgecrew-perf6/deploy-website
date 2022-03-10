@@ -82,15 +82,9 @@ function Games() {
         </div>
       </div>
 
-      {/* There will be the scores here */}
+      {/* Icon bars */}
       <div className="icon-bar">
-        <div className="icon">
-          <div className="text">
-            <h5>Contact us </h5>{" "}
-            <FaHeadset size={25} className="ic" id="about-us"></FaHeadset>
-          </div>
-        </div>
-        
+       
 
         <div
           className="icon"
