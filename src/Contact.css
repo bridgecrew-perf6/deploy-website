@@ -1,0 +1,21 @@
+.all-part{
+    background-color: black;
+    padding: 50px;
+}
+.main{
+    padding: 1vw;
+}
+.lines{
+    height: 5px;
+}
+h3{
+    color: white;
+}
+
+.contact-person{
+    padding: 2vw;
+}
+.back{
+    background-color: white;
+    color: black;
+}

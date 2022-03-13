@@ -1,10 +1,11 @@
 import Games from "./Games/Games";
 import "./App.css";
 import HomePage from "./Home";
+import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { createContext, useState } from "react";
 
-export const  currentUserInfo = createContext();
+export const currentUserInfo = createContext();
 
 function App() {
   const [userName, setUserName] = useState("Name");
@@ -57,6 +58,12 @@ function App() {
           </Route>
           <Route path="/game/:type">
             <Games></Games>
+          </Route>
+          <Route path="/game">
+            <Games></Games>
+            </Route>
+          <Route path="/contact-us">
+            <Contact></Contact>
           </Route>
         </Switch>
       </Router>

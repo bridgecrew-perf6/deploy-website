@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import MemoryGame from "./MemoryGame";
 import Hangman from "./Hangman";
 import { FaGamepad, FaHeadset } from "react-icons/fa";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 
 function Games() {
@@ -12,7 +12,7 @@ function Games() {
 
   //finalized last names
   const [finalizedName, setFinalizedName] = useState("Player");
-
+  const history = useHistory();
   //what to display
   const [display, setDisplay] = useState("logo");
 
@@ -84,7 +84,15 @@ function Games() {
 
       {/* Icon bars */}
       <div className="icon-bar">
-       
+        <div className="icon">
+          <div className="text" onClick={e=> {
+            history.push('/contact-us')
+          }}>
+            <h5>Contact us </h5>{" "}
+            <FaHeadset size={25} className="ic" id="about-us"></FaHeadset>
+          </div>
+        </div>
+        
 
         <div
           className="icon"
